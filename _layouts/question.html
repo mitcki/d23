@@ -1,0 +1,16 @@
+<html>
+
+{% include head.html %}
+
+<body>
+    <section class="question">
+        <div class="question-text">{{ page.question }}</div>
+        <div class="answer">{{ page.answer1 }}</div>
+        <div class="answer">{{ page.answer2 }}</div>
+        <div class="answer">{{ page.answer3 }}</div>
+        <div class="answer">{{ page.answer4 }}</div>
+        {{content}}
+    </section>
+</body>
+
+</html>
