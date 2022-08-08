@@ -1,30 +1,51 @@
 @font-face {
-    font-family: "Inspire";
-    src: url("../fonts/InspireTWDC-Medium.otf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Inspire";
-    src: url("../fonts/InspireTWDC-MediumItalic.otf") format("truetype");
-    font-weight: normal;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: "Inspire";
-    src: url("../fonts/InspireTWDC-Heavy.otf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Inspire";
-    src: url("../fonts/InspireTWDC-HeavyItalic.otf") format("truetype");
-    font-weight: bold;
-    font-style: italic;
-  }
+  font-family: "Inspire";
+  src: url("../fonts/InspireTWDC-Light.otf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inspire";
+  src: url("../fonts/InspireTWDC-LightItalic.otf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inspire";
+  src: url("../fonts/InspireTWDC-Roman.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inspire";
+  src: url("../fonts/InspireTWDC-Italic.otf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inspire";
+  src: url("../fonts/InspireTWDC-Medium.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inspire";
+  src: url("../fonts/InspireTWDC-MediumItalic.otf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inspire";
+  src: url("../fonts/InspireTWDC-Heavy.otf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inspire";
+  src: url("../fonts/InspireTWDC-HeavyItalic.otf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
 body {
     background-color: gainsboro;
     background-image: url(../images/silver-background.jpg);
@@ -33,22 +54,29 @@ body {
     background-repeat: no-repeat;
     font-family: "Inspire", Arial, Helvetica, sans-serif;
     margin: 0;
+    font-weight: normal;
 }
 .question {
     display: flex;
     flex-flow: column;
     max-width: 650px;
-    height: 100vh;
+    // height: 100vh;
     justify-content: center;
     margin: auto;
-    padding: 30px;
-    padding-top: 80px;
+    margin-top: 60px;
+    padding: 16px;
     box-sizing: border-box;
     background-image: url(../images/question-background.png);
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     color: white;
+    .question-wrapper{
+      background:linear-gradient(180deg, rgba(83,82,83,1) 0%, rgba(40,40,40,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
+      padding: 10px;
+      border-radius: 20px;
+      border: 4px solid black;
+    }
 }
 .answer{
     margin-top: 16px;
@@ -62,7 +90,7 @@ body {
         width: 16px; 
         height: 16px;
         content:"";
-        margin-right:16px;
+        padding-right:16px;
     }
 }
 .answer.guessed{
@@ -71,13 +99,166 @@ body {
         background-image: url(../images/ellipse-purple.png);
     }
 }
+.answer.correct{
+  color: #B982FF;
+  &::before{
+      background-image: url(../images/ellipse-purple.png);
+  }
+}
+.answer.wrong{
+  color: #FF0002;
+  &::before{
+      background-image: url(../images/ellipse-red.png);
+  }
+}
 .fact {
-    display:flex;
-    flex-flow: column;
-    max-width: 650px;
-    height: 100vh;
-    justify-content: center;
-    margin: auto;
+  display: flex;
+  flex-flow: column;
+  width: 90%;
+  max-width: 650px;
+  // height: 100vh;
+  justify-content: center;
+  margin: auto;
+  margin-top: 80px;
+  padding: 16px;
+  box-sizing: border-box;
+  background-image: url(../images/question-background.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  h1{
+    padding: 0px;
+    margin:0;
+    margin-bottom:10px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .fact-wrapper{
+    background:linear-gradient(180deg, #7D4DB8 0%, #6218BE 50%, #5B00D2 51%, #5B00D2 100%);
     padding: 20px;
+    padding-top:0px;
+    border-radius: 20px;
+    border: 4px solid #3B008A;
+    font-weight: lighter;
+    line-height: 150%;
+  }
+}
+.scan {
+  display: flex;
+  flex-flow: column;
+  width: 90%;
+  max-width: 650px;
+  // height: 100vh;
+  justify-content: center;
+  margin: auto;
+  margin-top: 80px;
+  padding: 16px;
+  box-sizing: border-box;
+  background-image: url(../images/question-background.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  h1{
+    padding: 0px;
+    margin:0;
+    margin-bottom:10px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .scan-wrapper{
+    background:#000000;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 4px solid #000000;
+    font-weight: lighter;
+    line-height: 150%;
+    position: relative;
     box-sizing: border-box;
+
+    &::after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      padding: 8px;
+      background:linear-gradient(180deg, rgba(83,82,83,1) 0%, rgba(40,40,40,1) 50%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%);
+      position: absolute;
+      top:0px;
+      left:0px;
+      mix-blend-mode: screen;
+      box-sizing: border-box;
+    }
+  }
+  #qr_video{
+    width:100%;
+  }
+}
+
+.progress-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    max-width: 40px;
+  }
+}
+.vault-lock{
+  margin-top: -40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    max-height:40px;
+  }
+}
+.enter-button{
+  margin-top:20px;
+  display:flex;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    max-height:40px;
+  }
+}
+.scan-new-code{
+  margin-top:40px;
+  display:flex;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width:50%;
+    max-width:250px;
+  }
+}
+.platinum-logo{
+  margin-top:40px;
+  margin-bottom:40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width:60%;
+    max-width:350px;
+  }
+}
+.feedback{
+  margin-top:20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  display: none;
+  &.correct{
+    display: flex;
+    color:#B982FF;
+  }
+  &.wrong{
+    display: flex;
+    color:#FFFFFF;
+  }
 }
