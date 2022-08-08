@@ -18,6 +18,10 @@ $(document).ready(function() {
         }
     });
 
+    $('.scan-new-code').click(function(e){
+        location.href = "/scan.html";
+    })
+
     shuffleAnswers();
     checkScore();
 
