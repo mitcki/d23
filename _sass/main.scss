@@ -55,6 +55,18 @@ body {
     font-family: "Inspire", Arial, Helvetica, sans-serif;
     margin: 0;
     font-weight: normal;
+    &.home{
+      background-image: url(../images/title.jpg);
+    }
+}
+.home-layout{
+  display:flex;
+  flex-flow: column;
+  height: 100vh;
+  justify-content: flex-end;
+  .scan-new-code{
+    margin-bottom:20px;
+  }
 }
 .question {
     display: flex;
@@ -197,7 +209,60 @@ body {
     width:100%;
   }
 }
-
+.prizes {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  max-width: 650px;
+  // height: 100vh;
+  justify-content: center;
+  margin: auto;
+  margin-top: 80px;
+  padding: 16px;
+  box-sizing: border-box;
+  background-image: url(../images/question-background.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  h1{
+    padding: 0px;
+    margin:0;
+    margin-bottom:10px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h3{
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  h2 {
+    text-align: center;
+  }
+  .prizes-wrapper{
+    background:linear-gradient(180deg, #7D4DB8 0%, #6218BE 50%, #5B00D2 51%, #5B00D2 100%);
+    padding: 20px;
+    padding-top:0px;
+    border-radius: 20px;
+    border: 4px solid #3B008A;
+    font-weight: lighter;
+    line-height: 150%;
+    a {
+      color: white;
+    }
+    img {
+      max-width:80px;
+      float: right;
+      padding: 8px;
+    }
+  }
+}
+.two-column{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}
 .progress-bar{
   display: flex;
   align-items: center;
@@ -260,5 +325,71 @@ body {
   &.wrong{
     display: flex;
     color:#FFFFFF;
+  }
+}
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  z-index: 100;
+  .menu-icon {
+      height: 60%;
+  }
+  .mobile-menu {
+      height: 40px;
+      display: flex;
+      align-items: center;
+  }
+}
+.mobile-nav {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: gainsboro;
+  background-image: url(../images/silver-background.jpg);
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 100;
+  display: none;
+  flex-flow: column;
+  justify-content: center;
+  animation-duration: 0.5s;
+  animation-name: slidein;
+  a {
+      margin-bottom: 40px;
+      color: black;
+      font-size: 1.5em;
+      text-decoration: none;
+      padding-left:40px;
+  }
+}
+
+.mobile-close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5em;
+  color:black;
+}
+
+@keyframes slidein {
+  from {
+      margin-left: 100%;
+      width: 300%;
+  }
+  to {
+      margin-left: 0%;
+      width: 100%;
   }
 }

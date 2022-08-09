@@ -22,10 +22,17 @@ $(document).ready(function() {
         location.href = "/scan.html";
     })
 
+    $('.mobile-menu').click(function(e) {
+        $('.mobile-nav').css('display', 'flex');
+        $('body').css('overflow', 'hidden');
+    });
+    $('.mobile-close-button').click(function(e) {
+        $('.mobile-nav').css('display', 'none');
+        $('body').css('overflow', 'auto');
+    });
+
     shuffleAnswers();
     checkScore();
-
-    
 });
 
 function shuffleAnswers(){
@@ -46,13 +53,15 @@ function correctAnswer(){
         if(score > 5){
             score = 5;
         }
+        if(score == 5){
+            setTimeout(function(){
+                location.href="/prizes.html";
+            },1000);
+        }
         localStorage.setItem('score', score);
     } else {
         localStorage.setItem('score', 1);
     }
-
-
-
     checkScore();
 }
 
