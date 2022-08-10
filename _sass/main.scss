@@ -57,6 +57,11 @@ body {
     font-weight: normal;
     &.home{
       background-image: url(../images/title.jpg);
+      background-size: contain;
+      background-position: top center;
+    }
+    &.prize-background{
+      background-image: url(../images/silver-prize-background.jpg);
     }
 }
 .home-layout{
@@ -343,35 +348,61 @@ nav {
   .menu-icon {
       height: 60%;
   }
+  .social {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    .share-icon {
+      height: 80%;
+      margin-right: 8px;
+    }
+  }
+  
   .mobile-menu {
       height: 40px;
       display: flex;
       align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      
   }
 }
 .mobile-nav {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
-  background-color: gainsboro;
-  background-image: url(../images/silver-background.jpg);
+  margin-left: 50%;
+  background-color: rgba(0,0,0,0.85);
+  // background-image: url(../images/silver-background.jpg);
   background-size: auto;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 100;
   display: none;
   flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
   animation-duration: 0.5s;
   animation-name: slidein;
+  padding-top:80px;
   a {
-      margin-bottom: 40px;
-      color: black;
-      font-size: 1.5em;
-      text-decoration: none;
-      padding-left:40px;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 1.25em;
+    font-weight: lighter;
+    text-decoration: none;
+    padding-left: 20px;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 100px;
+    img{
+      width: 80%;
+    }
   }
 }
 
@@ -380,16 +411,19 @@ nav {
   top: 20px;
   right: 20px;
   font-size: 1.5em;
-  color:black;
+  color:white;
 }
-
+.header-image{
+  width: 50%;
+  max-width: 250px;
+  margin:auto;
+  margin-bottom:10px;
+}
 @keyframes slidein {
   from {
       margin-left: 100%;
-      width: 300%;
   }
   to {
-      margin-left: 0%;
-      width: 100%;
+      margin-left: 50%;
   }
 }

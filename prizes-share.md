@@ -1,10 +1,9 @@
 ---
-layout: default-share
-title: Prizes
-description: Wonder of Disney Music Prizes
+layout: default-no-nav
 ---
 <section class="prizes">
-    <h1>PRIZES</h1>
+    <img class="header-image" src="/assets/images/disney-100-logo.png">
+    <p style="color:black; text-align:center; width: 75%;margin:auto;margin-bottom:20px;">Your friend is celebrating Disney 100 Years of Musical Wonder, and wanted to share the magic with you!</p>
     <div class="prizes-wrapper">
         <h3>LIMITED TIME DISCOUNT</h3>
         <div style="text-align:center;">Get 15% off your purchase using code: EXPO22</div>
@@ -27,10 +26,6 @@ description: Wonder of Disney Music Prizes
                 <a href="/assets/images/playlist-icon.png" target="_blank"><img src="/assets/images/playlist-icon.png"></a>
             </div>
         </div>
-
     </div>
 </section>
-
-<section class="platinum-logo">
-    <img src="../assets/images/platinum-logo.png">
-</section>
+<div style="height:180px;"></div>

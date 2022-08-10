@@ -22,7 +22,7 @@ $(document).ready(function() {
         location.href = "/scan.html";
     })
 
-    $('.mobile-menu').click(function(e) {
+    $('#mobile_menu_button').click(function(e) {
         $('.mobile-nav').css('display', 'flex');
         $('body').css('overflow', 'hidden');
     });
