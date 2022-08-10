@@ -260,6 +260,9 @@ body {
       max-width:80px;
       float: right;
       padding: 8px;
+      &.prize-display{
+        max-width: 100%;
+      }
     }
   }
 }
@@ -272,12 +275,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding:8px;
   img{
+    padding:2px;
     max-width: 40px;
   }
 }
 .vault-lock{
-  margin-top: -40px;
+  margin-top: -30px;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -308,7 +313,7 @@ body {
 }
 .platinum-logo{
   margin-top:40px;
-  margin-bottom:40px;
+  margin-bottom:120px;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -418,6 +423,18 @@ nav {
   max-width: 250px;
   margin:auto;
   margin-bottom:10px;
+}
+.vault-header{
+  display:flex;
+  flex-flow: column;
+  margin-top:80px;
+  h1{
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
 }
 @keyframes slidein {
   from {

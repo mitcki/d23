@@ -55,7 +55,7 @@ function correctAnswer(){
         }
         if(score == 5){
             setTimeout(function(){
-                location.href="/prizes.html";
+                location.href="/vault.html";
             },1000);
         }
         localStorage.setItem('score', score);
@@ -66,14 +66,22 @@ function correctAnswer(){
 }
 
 function checkScore(){
-    var score = 0;
-    if(localStorage.getItem('score') > 0){
-        score = parseInt(localStorage.getItem('score'));
-    }
+    var score = getScore();
     for(var i = 0; i <= score; i++){
         $('#p'+i).attr('src','../assets/images/mickey-icon-on.png');
     }
     if(score == 5){
         $('#lock_icon').attr('src','../assets/images/lock-icon-on.png');
+        $('#prize_vault_display').click(function(e){
+            location.href = "prizes.html";
+        });
     }
+}
+
+function getScore(){
+    var score = 0;
+    if(localStorage.getItem('score') > 0){
+        score = parseInt(localStorage.getItem('score'));
+    }
+    return score;
 }
