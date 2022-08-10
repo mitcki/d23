@@ -253,6 +253,9 @@ body {
     border: 4px solid #3B008A;
     font-weight: lighter;
     line-height: 150%;
+    &.plist{
+      padding-top:20px;
+    }
     a {
       color: white;
     }
@@ -434,6 +437,14 @@ nav {
     margin: 0;
     text-transform: uppercase;
     font-weight: bolder;
+  }
+}
+.playlists{
+  display:flex;
+  flex-flow: column;
+  .playlist{
+    display:flex;
+    align-items: center;
   }
 }
 @keyframes slidein {

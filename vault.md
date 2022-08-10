@@ -1,6 +1,6 @@
 ---
 layout: default-share
-title: Prizes
+title: Prize Vault
 description: Wonder of Disney Music Prizes
 ---
 <section class="vault-header">
