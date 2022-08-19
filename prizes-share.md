@@ -1,5 +1,7 @@
 ---
 layout: default-no-nav
+title: Wonder of Disney Music - Prizes
+description: Your friend is celebrating Disney 100 Years of Musical Wonder, and wanted to share the magic with you!
 bgclass: prize-background
 ---
 <div style="margin-top:40px;"></div>

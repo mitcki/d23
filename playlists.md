@@ -1,7 +1,7 @@
 ---
 layout: default-share
 title: Playlists
-description: Wonder of Disney Music Prizes
+description: All the musical memories from the 100 Years of Music timeline, curated just for you!
 bgclass: playlist-background
 share-url: /playlists-share.html
 ---

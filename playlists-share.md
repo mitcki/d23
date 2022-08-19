@@ -1,7 +1,7 @@
 ---
 layout: default-no-nav
-title: Playlists
-description: Wonder of Disney Music Prizes
+title: Wonder of Disney Music - Playlists
+description: All the musical memories from the 100 Years of Music timeline, curated just for you!
 bgclass: playlist-background
 ---
 <div style="margin-top:40px;" class="hide-tall"></div>
