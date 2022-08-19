@@ -3,6 +3,8 @@ layout: default-share
 title: Prizes
 description: Wonder of Disney Music Prizes
 bgclass: prize-background
+share-url: /prizes-share.html
+bgclass: prize-background
 ---
 <section class="prizes">
     <h1>PRIZES</h1>
