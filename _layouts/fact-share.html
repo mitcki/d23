@@ -1,0 +1,22 @@
+<html>
+{% include head.html %}
+<body>
+    <section class="site-wrapper fact-background">
+        <section class="fact">
+            <img class="header-image" src="/assets/images/disney-100-logo.png">
+             <p style="color:black; text-align:center; width: 75%;margin:auto;margin-bottom:20px;">Your friend is celebrating Disney 100 Years of Musical Wonder, and wanted to share the magic with you!</p>
+            <div class="fact-wrapper">
+                <div style="height:20px;"></div>
+                <h1 style="color:white;">{{ page.year }} {{ page.title }}</h1>
+                <p>{{ page.fact }}</p>
+                {{content}}
+            </div>
+        </section>
+        <section class="emporium-logo">
+            <img src="../assets/images/disney-music-emporium.png">
+        </section>
+    </section>
+    
+</body>
+
+</html>

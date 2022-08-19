@@ -1,13 +1,13 @@
 ---
-layout: default-share
+layout: default-no-nav
 title: Playlists
 description: Wonder of Disney Music Prizes
 bgclass: playlist-background
-share-url: /playlists-share.html
 ---
+<div style="margin-top:40px;" class="hide-tall"></div>
 <section class="prizes">
-    <h1>PLAYLISTS</h1>
-    <p style="color:black;text-align:center; margin:0;margin-bottom:20px;">All the musical memories from the 100 Years of Music timeline, curated just for you!</p>
+    <img class="header-image" src="/assets/images/disney-100-logo.png">
+    <p style="color:black; text-align:center; width: 75%;margin:auto;margin-bottom:20px;">Your friend is celebrating Disney 100 Years of Musical Wonder, and wanted to share the magic with you!</p>
     <div class="prizes-wrapper plist">
         <div class="playlists">
                 <a href="http://disneymusic.co/disneyhitsplaylists" target="_blank">
@@ -31,7 +31,5 @@ share-url: /playlists-share.html
         </div>
     </div>
 </section>
+<div style="height:100px;"></div>
 
-<section class="platinum-logo">
-    <img src="../assets/images/platinum-logo.png">
-</section>

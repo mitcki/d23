@@ -3,6 +3,7 @@ layout: default-share
 title: Prize Vault
 description: Wonder of Disney Music Prizes
 bgclass: prize-background
+share-url: /prizes-share.html
 ---
 <section class="vault-header">
     <h1>Prize Vault</h1>
