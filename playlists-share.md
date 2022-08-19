@@ -12,19 +12,19 @@ bgclass: playlist-background
         <div class="playlists">
                 <a href="http://disneymusic.co/disneyhitsplaylists" target="_blank">
                     <div class="playlist">
-                        <div><img src="/assets/images/playlist1.jpg"></div>
+                        <div><img src="/assets/images/playlist3.jpg"></div>
                         <p>DISNEY HITS</p>
                     </div>
                 </a>
             <a href="https://disneymusic.co/StarWarsBestOf" target="_blank">
                 <div class="playlist">
-                    <div><img src="/assets/images/playlist3.jpg"></div>
+                    <div><img src="/assets/images/playlist2.jpg"></div>
                     <p>BEST OF STAR WARS</p>
                 </div>
             </a>
             <a href="https://hollywoodrecs.co/MarvelMusic" target="_blank">
                 <div class="playlist">
-                    <div><img src="/assets/images/playlist2.jpg"></div>
+                    <div><img src="/assets/images/playlist1.jpg"></div>
                     <p>MARVEL MUSIC</p>
                 </div>
             </a>
