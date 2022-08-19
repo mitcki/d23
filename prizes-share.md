@@ -1,5 +1,6 @@
 ---
 layout: default-no-nav
+bgclass: prize-background
 ---
 <section class="prizes">
     <img class="header-image" src="/assets/images/disney-100-logo.png">

@@ -1,3 +1,7 @@
+:root {
+  --nav-width: 55%;
+  --nav-margin: 45%;
+}
 @font-face {
   font-family: "Inspire";
   src: url("../fonts/InspireTWDC-Light.otf") format("truetype");
@@ -47,28 +51,56 @@
   font-style: italic;
 }
 body {
-    background-color: gainsboro;
-    background-image: url(../images/silver-background.jpg);
-    background-size: cover;
-    background-position: center center;
+    background-color: black;
+    
     background-repeat: no-repeat;
     font-family: "Inspire", Arial, Helvetica, sans-serif;
     margin: 0;
     font-weight: normal;
     &.home{
-      background-image: url(../images/title.jpg);
-      background-size: contain;
-      background-position: top center;
+      .site-wrapper{
+        background-image: url(../images/title.jpg);
+        background-size: cover;
+        background-position: top center;
+        
+      }
     }
-    &.prize-background{
-      background-image: url(../images/silver-prize-background.jpg);
-    }
+    
+}
+.site-wrapper{
+  background-image: url(../images/silver-background.jpg);
+  background-size: cover;
+  background-position: center center;
+  position:relative;
+  max-width: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:auto;
+  overflow:hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  // padding-top: 80px;
+  &.scan-code{
+    background-image: url(../images/bg-scan-code.jpg);
+  }
+  &.prize-background{
+    background-image: url(../images/bg-prizes.jpg);
+  }
+  &.playlist-background{
+    background-image: url(../images/bg-playlist.jpg);
+  }
+  &.fact-background{
+    background-image: url(../images/bg-fact.jpg);
+  }
 }
 .home-layout{
   display:flex;
   flex-flow: column;
   height: 100vh;
   justify-content: flex-end;
+  margin-top: -70px;
   .scan-new-code{
     margin-bottom:20px;
   }
@@ -136,7 +168,7 @@ body {
   // height: 100vh;
   justify-content: center;
   margin: auto;
-  margin-top: 80px;
+  // margin-top: 80px;
   padding: 16px;
   box-sizing: border-box;
   background-image: url(../images/question-background.png);
@@ -170,7 +202,7 @@ body {
   // height: 100vh;
   justify-content: center;
   margin: auto;
-  margin-top: 80px;
+  // margin-top: 80px;
   padding: 16px;
   box-sizing: border-box;
   background-image: url(../images/question-background.png);
@@ -222,7 +254,7 @@ body {
   // height: 100vh;
   justify-content: center;
   margin: auto;
-  margin-top: 80px;
+  // margin-top: 80px;
   padding: 16px;
   box-sizing: border-box;
   background-image: url(../images/question-background.png);
@@ -253,6 +285,9 @@ body {
     border: 4px solid #3B008A;
     font-weight: lighter;
     line-height: 150%;
+    margin-bottom: -12px;
+    margin-left: -6px;
+    margin-right: -6px;
     &.plist{
       padding-top:20px;
     }
@@ -341,7 +376,7 @@ body {
   }
 }
 nav {
-  position: fixed;
+  position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -380,9 +415,9 @@ nav {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 50vw;
+  width: var(--nav-width);
   height: 100vh;
-  margin-left: 50%;
+  margin-left: var(--nav-margin);
   background-color: rgba(0,0,0,0.85);
   // background-image: url(../images/silver-background.jpg);
   background-size: auto;
@@ -420,6 +455,9 @@ nav {
   right: 20px;
   font-size: 1.5em;
   color:white;
+  img{
+    width: 40px;
+  }
 }
 .header-image{
   width: 50%;
@@ -430,7 +468,7 @@ nav {
 .vault-header{
   display:flex;
   flex-flow: column;
-  margin-top:80px;
+  // margin-top:80px;
   h1{
     text-align: center;
     font-size: 2em;
@@ -442,6 +480,10 @@ nav {
 .playlists{
   display:flex;
   flex-flow: column;
+  a {
+    text-decoration: none;
+    font-size: 1.2em;
+  }
   .playlist{
     display:flex;
     align-items: center;
@@ -452,6 +494,6 @@ nav {
       margin-left: 100%;
   }
   to {
-      margin-left: 50%;
+      margin-left: var(--nav-margin);
   }
 }

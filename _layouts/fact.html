@@ -3,19 +3,21 @@
 {% include head.html %}
 
 <body>
-    {% include nav.html %}
-    <section class="fact">
-        <h1>{{ page.year }} {{ page.title }}</h1>
-        <div class="fact-wrapper">
-            <p>{{ page.fact }}</p>
-            {{content}}
-        </div>
-    </section>
-    <section class="scan-new-code">
-        <img src="../assets/images/scan-new-code.png">
-    </section>
-    <section class="platinum-logo">
-        <img src="../assets/images/platinum-logo.png">
+    <section class="site-wrapper fact-background">
+        {% include nav.html %}
+        <section class="fact">
+            <h1>{{ page.year }} {{ page.title }}</h1>
+            <div class="fact-wrapper">
+                <p>{{ page.fact }}</p>
+                {{content}}
+            </div>
+        </section>
+        <section class="scan-new-code">
+            <img src="../assets/images/scan-new-code.png">
+        </section>
+        <section class="platinum-logo">
+            <img src="../assets/images/platinum-logo.png">
+        </section>
     </section>
 </body>
 

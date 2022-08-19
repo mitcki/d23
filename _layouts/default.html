@@ -3,9 +3,11 @@
 {% include head.html %}
 
 <body>
-    {% include nav.html %}
+    <section class="site-wrapper {{ page.bgclass }}">
+        {% include nav.html %}
 
-    {{content}}
+        {{content}}
+    </section>
 </body>
 
 </html>

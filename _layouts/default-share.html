@@ -2,10 +2,11 @@
 
 {% include head.html %}
 
-<body class="prize-background">
-    {% include nav-share.html %}
-
-    {{content}}
+<body>
+    <section class="site-wrapper  {{ page.bgclass }}">
+        {% include nav-share.html %}
+        {{content}}
+    </section>
 </body>
 
 </html>

@@ -3,39 +3,41 @@
 {% include head.html %}
 
 <body>
-    {% include nav.html %}
-    <section class="question">
-        <section class="vault-lock">
-            <img id="lock_icon" src="../assets/images/lock-icon-off.png">
-        </section>
-        <section class="progress-bar">
-            <img id="p1" src="../assets/images/mickey-icon-off.png">
-            <img id="p2" src="../assets/images/mickey-icon-off.png">
-            <img id="p3" src="../assets/images/mickey-icon-off.png">
-            <img id="p4" src="../assets/images/mickey-icon-off.png">
-            <img id="p5" src="../assets/images/key-icon-off.png">
-        </section>
-        <div class="question-wrapper">
-            <div class="question-text">{{ page.question }}</div>
-            <span class="answers">
-                <div class="answer" id="a1">{{ page.answer1 }}</div>
-                <div class="answer" id="a2">{{ page.answer2 }}</div>
-                <div class="answer" id="a3">{{ page.answer3 }}</div>
-                <div class="answer" id="a4">{{ page.answer4 }}</div>
-            </span>
-            <div class="enter-button">
-                <img src="../assets/images/enter-button.png">
+    <section class="site-wrapper">
+        {% include nav.html %}
+        <section class="question">
+            <section class="vault-lock">
+                <img id="lock_icon" src="../assets/images/lock-icon-off.png">
+            </section>
+            <section class="progress-bar">
+                <img id="p1" src="../assets/images/mickey-icon-off.png">
+                <img id="p2" src="../assets/images/mickey-icon-off.png">
+                <img id="p3" src="../assets/images/mickey-icon-off.png">
+                <img id="p4" src="../assets/images/mickey-icon-off.png">
+                <img id="p5" src="../assets/images/key-icon-off.png">
+            </section>
+            <div class="question-wrapper">
+                <div class="question-text">{{ page.question }}</div>
+                <span class="answers">
+                    <div class="answer" id="a1">{{ page.answer1 }}</div>
+                    <div class="answer" id="a2">{{ page.answer2 }}</div>
+                    <div class="answer" id="a3">{{ page.answer3 }}</div>
+                    <div class="answer" id="a4">{{ page.answer4 }}</div>
+                </span>
+                <div class="enter-button">
+                    <img src="../assets/images/enter-button.png">
+                </div>
+                <div class="feedback">
+                    Correct!
+                </div>
             </div>
-            <div class="feedback">
-                Correct!
-            </div>
-        </div>
-    </section>
-    <section class="scan-new-code">
-        <img src="../assets/images/scan-new-code.png">
-    </section>
-    <section class="platinum-logo">
-        <img src="../assets/images/platinum-logo.png">
+        </section>
+        <section class="scan-new-code">
+            <img src="../assets/images/scan-new-code.png">
+        </section>
+        <section class="platinum-logo">
+            <img src="../assets/images/platinum-logo.png">
+        </section>
     </section>
 </body>
 

@@ -3,19 +3,20 @@
 {% include head.html %}
 
 <body>
-    {% include nav.html %}
-
-    <section class="scan">
-        <h1>SCAN A QR CODE</h1>
-        <div class="scan-wrapper">
-            {{content}}
-        </div>
-    </section>
-    <section class="scan-new-code">
-        <img src="../assets/images/scan-new-code.png">
-    </section>
-    <section class="platinum-logo">
-        <img src="../assets/images/platinum-logo.png">
+    <section class="site-wrapper scan-code">
+        {% include nav.html %}
+        <section class="scan">
+            <h1>SCAN A QR CODE</h1>
+            <div class="scan-wrapper">
+                {{content}}
+            </div>
+        </section>
+        <section class="scan-new-code">
+            <img src="../assets/images/scan-new-code.png">
+        </section>
+        <section class="platinum-logo">
+            <img src="../assets/images/platinum-logo.png">
+        </section>
     </section>
 </body>
 
