@@ -22,7 +22,7 @@ share-url: /prizes-share.html
         <img id="p4" src="../assets/images/mickey-icon-off.png">
         <img id="p5" src="../assets/images/key-icon-off.png">
     </section>
-    <p style="color:black;text-align:center; margin:0;margin-bottom:20px;"><b>Answer any 5 to unlock the prize vault!</b></p>
+    <p id="answer_feedback"><b>Answer any 5 to unlock the prize vault!</b></p>
     <div class="prizes-wrapper" id="prize_vault_display">
         <img class="prize-display" src="../assets/images/prizes-display.png">
     </div>

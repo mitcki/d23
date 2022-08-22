@@ -83,6 +83,7 @@ function checkScore(){
         $('#prize_vault_display').click(function(e){
             location.href = "prizes.html";
         });
+        $('#answer_feedback').html('Great job! Tap below to open the vault:');
     }
 }
 
