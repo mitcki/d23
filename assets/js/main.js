@@ -24,11 +24,19 @@ $(document).ready(function() {
 
     $('#mobile_menu_button').click(function(e) {
         $('.mobile-nav').css('display', 'flex');
-        $('body').css('overflow', 'hidden');
+        $('.blocker').css('display', 'block');
+        $('body').addClass('menu-open');
     });
     $('.mobile-close-button').click(function(e) {
         $('.mobile-nav').css('display', 'none');
-        $('body').css('overflow', 'auto');
+        $('.blocker').css('display', 'none');
+        $('body').removeClass('menu-open');
+    });
+    $('.mobile-nav a').click(function(e) {
+        e.preventDefault();
+        console.log(e.target.href);
+        $('.mobile-close-button').click();
+        location.href=e.target.href;
     });
 
     shuffleAnswers();
