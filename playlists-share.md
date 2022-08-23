@@ -10,19 +10,19 @@ bgclass: playlist-background
     <p style="color:black; text-align:center; width: 75%;margin:auto;margin-bottom:20px;">Your friend is celebrating Disney 100 Years of Musical Wonder, and wanted to share the magic with you!</p>
     <div class="prizes-wrapper plist">
         <div class="playlists">
-                <a href="http://disneymusic.co/disneyhitsplaylists" target="_blank">
+                <a href="https://disneymusic.lnk.to/disneyhitsD1" target="_blank">
                     <div class="playlist">
                         <div><img src="/assets/images/playlist3.jpg"></div>
                         <p>DISNEY HITS</p>
                     </div>
                 </a>
-            <a href="https://disneymusic.co/StarWarsBestOf" target="_blank">
+            <a href="https://disneymusic.lnk.to/BestofStarWarsD1" target="_blank">
                 <div class="playlist">
                     <div><img src="/assets/images/playlist2.jpg"></div>
                     <p>BEST OF STAR WARS</p>
                 </div>
             </a>
-            <a href="https://hollywoodrecs.co/MarvelMusic" target="_blank">
+            <a href="https://marvelmusic.lnk.to/MarvelMusicPlaylistD1" target="_blank">
                 <div class="playlist">
                     <div><img src="/assets/images/playlist1.jpg"></div>
                     <p>MARVEL MUSIC</p>
