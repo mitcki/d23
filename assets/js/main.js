@@ -19,7 +19,7 @@ $(document).ready(function() {
     });
 
     $('.scan-new-code').click(function(e){
-        location.href = "/scan.html";
+        location.href = "/scan";
     })
 
     $('#mobile_menu_button').click(function(e) {
