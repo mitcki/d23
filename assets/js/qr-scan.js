@@ -2,7 +2,7 @@ const qrScanner = new QrScanner(
     qr_video,
     result => {
         // if(!qrScanned){
-            location.href = result.data;
+            location.href = result.data.slice(0, -5);
             qrScanner.stop();
         // }
     },
