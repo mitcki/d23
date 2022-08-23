@@ -451,6 +451,7 @@ nav {
   left:0px;
   z-index: 150;
 }
+
 .mobile-nav {
   position: absolute;
   top: 0px;
@@ -490,7 +491,9 @@ nav {
     }
   }
 }
-
+body.android .mobile-nav {
+  position: fixed;
+}
 .mobile-close-button {
   position: absolute;
   top: 20px;

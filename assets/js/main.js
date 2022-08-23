@@ -39,10 +39,19 @@ $(document).ready(function() {
         location.href=e.target.href;
     });
 
+    
+
     shuffleAnswers();
     checkScore();
 });
-
+$(function() { // Android fix hack
+    if(navigator != undefined && navigator.userAgent != undefined) {
+        user_agent = navigator.userAgent.toLowerCase();
+        if(user_agent.indexOf('android') > -1) { // Is Android.
+            $(document.body).addClass('android');
+        }
+    }
+});
 function shuffleAnswers(){
     if(document.querySelector('.answers')){
         var answers = document.querySelector('.answers');
