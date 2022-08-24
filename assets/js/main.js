@@ -1,4 +1,15 @@
 $(document).ready(function() {
+    /* GA Setup */
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3V6SF6XYK7');
+    /* End GA Setup */
+
     $('.answer').click(function(e) {
         $('.answer').removeClass('guessed');
         $(this).addClass('guessed');
