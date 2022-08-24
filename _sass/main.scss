@@ -95,12 +95,58 @@ body {
   }
   &.prize-background{
     background-image: url(../images/bg-prizes.jpg);
+    .scan-new-code{
+      position: relative;
+      &::after{
+        content: url(../images/tinker-bell-wand.png);
+        position: absolute;
+        transform: scale(0.2) scaleX(-1);
+        left: -67px;
+        top: -178px;
+      }
+    }
   }
   &.playlist-background{
     background-image: url(../images/bg-playlist.jpg);
+    .prizes{
+      position: relative;
+      &.share{
+        margin-top: 10vh;
+      }
+      &::after{
+        content: url(../images/tinker-bell-wand.png);
+        position: absolute;
+        transform: scale(0.25);
+        right: -47px;
+        top: -194px;
+      }
+    }
   }
   &.fact-background{
     background-image: url(../images/bg-fact.jpg);
+    .scan-new-code{
+      position: relative;
+      &::after{
+        content: url(../images/tinker-bell-wand.png);
+        position: absolute;
+        transform: scale(0.25);
+        right: -67px;
+        top: -178px;
+      }
+    }
+    &.share{
+      .fact{
+        position: relative;
+        margin-top: 60px;
+        &::after{
+          content: url(../images/tinker-bell.png);
+          position: absolute;
+          transform: scale(0.25);
+          right: -87px;
+          top: -176px;
+        }
+      }
+    }
   }
 }
 .home-layout{
@@ -308,6 +354,8 @@ h1{
     margin-bottom: -12px;
     margin-left: -6px;
     margin-right: -6px;
+    display: flex;
+    flex-flow: column;
     &.plist{
       padding-top:20px;
     }
@@ -322,8 +370,13 @@ h1{
         max-width: 100%;
       }
     }
+    .mickey-divider{
+      max-width: 60%;
+      margin: auto;
+    }
   }
 }
+
 .two-column{
   display: flex;
   margin-top: 20px;

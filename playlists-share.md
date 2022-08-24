@@ -5,7 +5,7 @@ description: All the musical memories from the 100 Years of Music timeline, cura
 bgclass: playlist-background
 ---
 <div style="margin-top:40px;" class="hide-tall"></div>
-<section class="prizes">
+<section class="prizes share">
     <img class="header-image" src="/assets/images/disney-100-logo.png">
     <p style="color:black; text-align:center; width: 75%;margin:auto;margin-bottom:20px;">Your friend is celebrating Disney 100 Years of Musical Wonder, and wanted to share the magic with you!</p>
     <div class="prizes-wrapper plist">

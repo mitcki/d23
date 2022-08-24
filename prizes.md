@@ -14,13 +14,14 @@ bgclass: prize-background
         <div class="two-column">
             <div class="col1">
                 Redeemable online only at:
-                 <a href="https://www.disneymusicemporium.com" target="_blank">www.disneymusicemporium.com</a>
+                 <a href="https://www.disneymusicemporium.com" target="_blank">disneymusicemporium.com</a>
                  <span style="font-size:0.8em;">Hurry! Valid only from 9/12 - 9/18</span>
             </div>
             <div class="col2">
                 <img src="/assets/images/disney-music-emporium.png">
             </div>
         </div>
+        <img class="mickey-divider" src="/assets/images/mickey-divider.png">
         <h2>EXCLUSIVE DOWNLOADS</h2>
         <div class="two-column">
             <div class="col1">
