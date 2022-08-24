@@ -1,10 +1,8 @@
 const qrScanner = new QrScanner(
     qr_video,
     result => {
-        // if(!qrScanned){
-            location.href = result.data.slice(0, -5);
-            qrScanner.stop();
-        // }
+        location.href = result.data.slice(0, -5);
+        qrScanner.stop();
     },
     {
     onDecodeError: error => {

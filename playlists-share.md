@@ -1,6 +1,6 @@
 ---
 layout: default-no-nav
-title: Wonder of Disney Music - Playlists
+title: Playlists - Shared
 description: All the musical memories from the 100 Years of Music timeline, curated just for you!
 bgclass: playlist-background
 ---
