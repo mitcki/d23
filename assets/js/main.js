@@ -20,17 +20,20 @@ $(document).ready(function() {
         if($('.guessed').attr('id') == 'a1'){
             $('.feedback').addClass('correct');
             correctAnswer();
+            gtag("event", "answer_correct");
         } else {
             console.log('wrong');
             $('.guessed').addClass('wrong').removeClass('guessed');
             $('#a1').addClass('correct');
             $('.feedback').addClass('wrong');
             $('.feedback').html('Oops!');
+            gtag("event", "answer_wrong");
         }
     });
 
     $('.scan-new-code').click(function(e){
         location.href = "/scan";
+        gtag("event", "scan_button_click");
     })
 
     $('#mobile_menu_button').click(function(e) {
