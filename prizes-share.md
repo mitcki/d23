@@ -18,7 +18,7 @@ bgclass: prize-background
                  <span style="font-size:0.8em;">Hurry! Valid only from 9/12 - 9/18</span>
             </div>
             <div class="col2">
-                <img src="/assets/images/disney-music-emporium.png">
+                <img id="discount_code_shared" src="/assets/images/disney-music-emporium.png">
             </div>
         </div>
         <img class="mickey-divider" src="/assets/images/mickey-divider.png">

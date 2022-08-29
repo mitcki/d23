@@ -53,7 +53,12 @@ $(document).ready(function() {
         location.href=e.target.href;
     });
 
-    
+    $('#discount_code').on('load',function(e){
+        gtag("event", "discount_code_displayed");
+    });
+    $('#discount_code_shared').on('load',function(e){
+        gtag("event", "shared_discount_code_displayed");
+    });
 
     shuffleAnswers();
     checkScore();
